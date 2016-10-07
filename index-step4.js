@@ -3,29 +3,26 @@ $(document).ready(main);
 
 function main(){
 
-
 	var vie;
-
 	var min;
-
 	var max;
-
 	var luck;
-
 
 	function demarrerPartie(){
 
 
 		vie = parseInt(prompt("Choisissez le nombre de vie"));
-		$("#vie").html(vie);
-
+		
 		min = parseInt(prompt("Choisissez le nombre minimum "));
-		$('#min').html(min);
-
+		
 		max = parseInt(prompt("Choisissez le nombre maximum "));
-		$('#max').html(max);
 		
 		luck = Math.floor(Math.random()* (max - min +1)) + min;
+
+		$("#vie").html(vie);
+		$('#min').html(min);
+		$('#max').html(max);
+
 
 	}
 
