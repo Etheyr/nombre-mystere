@@ -29,7 +29,6 @@ function main(){
 		$('#max').html(max);
 		
 		luck = Math.floor(Math.random()* (max - min +1)) + min;
-		console.log(luck);
 
 	}
 
@@ -81,7 +80,6 @@ function main(){
 			alert("Perdu trop grand");
 			partiePerdue();
 			actual();
-
 		}
 
 	}
@@ -90,9 +88,6 @@ function main(){
 
 		clickValider();
 
-
 	});
-
 	demarrerPartie();
-
 }
