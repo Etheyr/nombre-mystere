@@ -7,25 +7,17 @@ $(document).ready(main);
 function main(){
 
 
-	var vie = parseInt(prompt("Choisissez le nombre de vie"));
+	var vie;
 
-	$('#vie').text(vie)
+	var min;
 
-	var min = parseInt(prompt("Choisissez le nombre minimum "));
+	var max;
 
-	var max = parseInt(prompt("Choisissez le nombre maximum "));
-
-	var luck = Math.floor(Math.random()* (max - min +1)) + min;
-
-	console.log(luck);
+	var luck;
 
 
 	function demarrerPartie(){
 
-
-		nombre = parseInt($("#clickValider").val(),10);
-		luck = Math.floor(Math.random()* (max - min +1)) + min;
-		console.log(luck);
 
 		vie = parseInt(prompt("Choisissez le nombre de vie"));
 		$("#vie").html(vie);
@@ -36,6 +28,8 @@ function main(){
 		max = parseInt(prompt("Choisissez le nombre maximum "));
 		$('#max').html(max);
 		
+		luck = Math.floor(Math.random()* (max - min +1)) + min;
+		console.log(luck);
 
 	}
 
@@ -57,11 +51,19 @@ function main(){
 		}
 
 	}
+
+	function actual(){
+
+		vie--;
+		$('#vie').text(vie)
+
+	}
+
+
 	function clickValider(){
 
 
 		var nombre = parseInt($("#clickValider").val(),10);
-
 
 
 		if  (luck === nombre){ 
@@ -70,18 +72,16 @@ function main(){
 
 		}else if(luck > nombre){ 
 
-			vie--;
 			alert("Perdu trop petit");
 			partiePerdue();
-			$('#vie').text(vie) 
-
+			actual();
 
 		}else if(luck < nombre){
 
-			vie--;
 			alert("Perdu trop grand");
 			partiePerdue();
-			$('#vie').text(vie) 
+			actual();
+
 		}
 
 	}
@@ -90,5 +90,9 @@ function main(){
 
 		clickValider();
 
+
 	});
+
+	demarrerPartie();
+
 }
