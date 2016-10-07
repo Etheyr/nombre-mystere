@@ -1,6 +1,3 @@
-//Avant de commencer, donner la possiblité de choisir le nombre de tentatives
-//Avant de commencer, choisir les valeurs minimale et maximale du nombre que l'ordinateur va choisir.
-
 $(document).ready(main);
 
 
