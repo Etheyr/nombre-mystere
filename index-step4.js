@@ -70,8 +70,6 @@ function main(){
 		if  (luck === nombre){ 
 
 			partieGagnee();
-			demarrerPartie();
-
 
 		}else if(luck > nombre){ 
 
