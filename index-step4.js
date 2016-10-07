@@ -18,7 +18,7 @@ function main(){
 	var luck = Math.floor(Math.random()* (max - min +1)) + min;
 
 	console.log(luck);
-	
+
 
 	function demarrerPartie(){
 
@@ -70,8 +70,6 @@ function main(){
 
 		}else if(luck > nombre){ 
 
-
-			console.log(vie)
 			vie--;
 			alert("Perdu trop petit");
 			partiePerdue();
@@ -80,8 +78,6 @@ function main(){
 
 		}else if(luck < nombre){
 
-
-			console.log(vie)
 			vie--;
 			alert("Perdu trop grand");
 			partiePerdue();
