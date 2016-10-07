@@ -8,7 +8,8 @@ function main(){
 
 
 	var vie = parseInt(prompt("Choisissez le nombre de vie"));
-			$('#vie').text(vie)
+	
+	$('#vie').text(vie)
 
 	var min = parseInt(prompt("Choisissez le nombre minimum "));
 
