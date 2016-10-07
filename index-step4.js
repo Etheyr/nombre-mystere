@@ -18,9 +18,7 @@ function main(){
 	var luck = Math.floor(Math.random()* (max - min +1)) + min;
 
 	console.log(luck);
-
-	console.log(vie);
-
+	
 
 	function demarrerPartie(){
 
@@ -47,7 +45,6 @@ function main(){
 		alert("Bravo tu à trouver le nombre mystère");
 		demarrerPartie();
 	}
-
 
 	function partiePerdue(){
 
@@ -96,7 +93,6 @@ function main(){
 	$("button").click(function(){
 
 		clickValider();
-
 
 	});
 }
