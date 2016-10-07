@@ -25,7 +25,6 @@ function main(){
 	function demarrerPartie(){
 
 
-		vie = prompt("Choisissez le nombre maximal de tentatives");
 		nombre = parseInt($("#clickValider").val(),10);
 		luck = Math.floor(Math.random()* (max - min +1)) + min;
 		console.log(luck);
